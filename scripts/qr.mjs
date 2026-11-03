@@ -7,6 +7,7 @@ const CODES = [
   ['club-breakfast-airport', 'https://club.armadaresidence.com/?src=breakfast-airport'],
   ['club-breakfast-shafa', 'https://club.armadaresidence.com/?src=breakfast-shafa'],
   ['google-review-shafa', 'https://g.page/r/CYIstH7p1560EBM/review'],
+  ['google-review-airport', 'https://g.page/r/CeN9kSN0efysEBM/review'],
 ];
 
 const opts = {
