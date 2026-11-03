@@ -1,6 +1,0 @@
-# Only the club-join function lives here. Deploy it by name:
-#   npx supabase functions deploy club-join --project-ref wwzxwettsuwtakwwbfly --no-verify-jwt --use-api
-project_id = "armada-club"
-
-[functions.club-join]
-verify_jwt = false

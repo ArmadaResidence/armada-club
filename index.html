@@ -3,85 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; connect-src https://wwzxwettsuwtakwwbfly.supabase.co; base-uri 'none'; form-action 'none'">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<title>نادي أرمادا ريزيدنس</title>
-<meta name="description" content="سجّل مجانًا لتصلك عروض خاصة بالأعضاء في أرمادا ريزيدنس بالطائف.">
-<meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#F3EFE7" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#142A3B" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-<link rel="preload" href="assets/fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/ibm-plex-sans-arabic-arabic-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/style.css?v=2a92b7d07c">
-<script src="assets/app.js?v=635d9c0728" defer></script>
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="robots" content="noindex">
+<title>نادي أرمادا ريزيدنس | Armada Residence Club</title>
+<link rel="canonical" href="https://armadaresidence.github.io/armadaresidence-website/club/">
+<script src="redirect.js"></script>
+<noscript><meta http-equiv="refresh" content="0; url=https://armadaresidence.github.io/armadaresidence-website/club/"></noscript>
 </head>
 <body>
-<header class="top">
-  <button type="button" id="lang-toggle" class="lang" lang="en">English</button>
-</header>
-<main class="wrap">
-  <img class="logo" src="assets/logo.svg" alt="أرمادا ريزيدنس" data-i18n-alt="logoAlt" width="150" height="95">
-
-  <section id="join-view" aria-labelledby="join-title">
-    <h1 id="join-title" data-i18n="title">نادي أرمادا ريزيدنس</h1>
-    <p class="sub" data-i18n="subtitle">سجّل مجانًا لتصلك عروض خاصة بالأعضاء في أرمادا ريزيدنس بالطائف.</p>
-    <ul class="benefits">
-      <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="b1">عروض وأكواد خصم للأعضاء فقط</span></li>
-      <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="b2">أول من يعرف بالعروض الموسمية</span></li>
-      <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="b3">مجانًا ودون أي التزام</span></li>
-    </ul>
-
-    <form id="join-form" class="card" novalidate>
-      <div class="field">
-        <label for="phone" data-i18n="phoneLabel">رقم الجوال</label>
-        <div class="phone" dir="ltr">
-          <div class="cc">
-            <span class="cc-value" id="cc-value" aria-hidden="true">+966</span>
-            <select id="country" name="country" aria-label="رمز الدولة" data-i18n-aria="countryLabel">
-              <option value="SA" selected>السعودية +966</option>
-            </select>
-          </div>
-          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="phone-error">
-        </div>
-        <p class="error" id="phone-error" hidden></p>
-      </div>
-
-      <div class="field">
-        <label for="name" data-i18n="nameLabel">الاسم (اختياري)</label>
-        <input id="name" name="name" type="text" autocomplete="name" maxlength="80">
-      </div>
-
-      <div class="hp" aria-hidden="true">
-        <label for="website">Website</label>
-        <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
-      </div>
-
-      <div class="field consent">
-        <div class="check">
-          <input type="checkbox" id="consent" name="consent" required aria-describedby="consent-error">
-          <label for="consent" data-i18n="consent">أوافق على تلقي العروض من أرمادا ريزيدنس عبر الواتساب والبريد الإلكتروني، وعلى عرض إعلاناتها لي على منصات مثل سناب شات وتيك توك وميتا وجوجل، ويمكنني إلغاء ذلك في أي وقت.</label>
-        </div>
-        <p class="error" id="consent-error" hidden></p>
-      </div>
-
-      <p class="error form-error" id="form-error" role="alert" hidden></p>
-
-      <button type="submit" class="btn" id="submit"><span class="spinner" aria-hidden="true"></span><span data-i18n="submit">انضم إلى النادي</span></button>
-    </form>
-
-    <details class="privacy">
-      <summary data-i18n="privacySummary">كيف نستخدم بياناتك</summary>
-      <p data-i18n="privacyText">نستخدم رقم جوالك واسمك لإرسال عروض أرمادا ريزيدنس إليك عبر الواتساب، ونرفع رقم جوالك بصيغة مشفّرة إلى منصات الإعلان، مثل سناب شات وتيك توك وميتا وجوجل، لعرض إعلاناتنا لك، وقد تعالج هذه المنصات البيانات خارج المملكة. يمكنك إلغاء اشتراكك في أي وقت بالرد على أي رسالة منا. نحذف بيانات الأعضاء بعد 24 شهرًا من آخر نشاط.</p>
-    </details>
-  </section>
-
-  <section id="done-view" class="done" aria-labelledby="done-title" hidden>
-    <div class="done-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
-    <h1 id="done-title" tabindex="-1" data-i18n="doneTitle">تم تسجيلك في نادي أرمادا ريزيدنس.</h1>
-    <p class="sub" data-i18n="doneText">ستصلك عروض الأعضاء عبر الواتساب والبريد الإلكتروني.</p>
-    <a class="btn btn-outline" href="https://linktr.ee/ArmadaR" target="_blank" rel="noopener" data-i18n="follow">تابعنا على حساباتنا</a>
-  </section>
-</main>
+<p><a href="https://armadaresidence.github.io/armadaresidence-website/club/">نادي أرمادا ريزيدنس — Armada Residence Club</a></p>
 </body>
 </html>
