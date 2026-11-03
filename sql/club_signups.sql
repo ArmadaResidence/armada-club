@@ -1,4 +1,4 @@
--- public.club_signups: Armada Club sign-ups collected by club.armadaresidence.com.
+-- public.club_signups: Armada Residence Club sign-ups collected by club.armadaresidence.com.
 -- Applied once by hand to the armada-residence project; the main project adopts it later.
 -- Only the club-join Edge Function (service role) reads or writes it.
 

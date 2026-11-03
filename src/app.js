@@ -1,5 +1,5 @@
 import { parsePhoneNumberFromString, getCountries, getCountryCallingCode } from 'libphonenumber-js/mobile';
-import { T, CONSENT_VERSION } from './strings.js';
+import { T, CONSENT_VERSION, keepClubName } from './strings.js';
 
 const ENDPOINT = __ENDPOINT__;
 const TIMEOUT_MS = 15000;
@@ -34,7 +34,7 @@ function applyLang() {
   html.lang = lang;
   html.dir = lang === 'ar' ? 'rtl' : 'ltr';
   document.title = t('docTitle');
-  document.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = t(el.dataset.i18n); });
+  document.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = keepClubName(t(el.dataset.i18n)); });
   document.querySelectorAll('[data-i18n-alt]').forEach((el) => { el.alt = t(el.dataset.i18nAlt); });
   document.querySelectorAll('[data-i18n-aria]').forEach((el) => { el.setAttribute('aria-label', t(el.dataset.i18nAria)); });
   document.querySelectorAll('.error[data-key]').forEach((el) => { el.textContent = t(el.dataset.key); });

@@ -3,7 +3,7 @@
 import { build, transform } from 'esbuild';
 import { createHash } from 'node:crypto';
 import { readFile, writeFile } from 'node:fs/promises';
-import { T } from '../src/strings.js';
+import { T, keepClubName } from '../src/strings.js';
 
 const ENDPOINT = 'https://wwzxwettsuwtakwwbfly.supabase.co/functions/v1/club-join';
 
@@ -27,6 +27,8 @@ await writeFile('assets/style.css', css.code);
 
 const vars = {
   ...T.ar,
+  title: keepClubName(T.ar.title),
+  doneTitle: keepClubName(T.ar.doneTitle),
   endpointOrigin: new URL(ENDPOINT).origin,
   cssHash: hash(css.code),
   jsHash: hash(jsCode),

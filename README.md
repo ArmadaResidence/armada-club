@@ -1,4 +1,4 @@
-# نادي أرمادا · Armada Club
+# نادي أرمادا ريزيدنس · Armada Residence Club
 
 Sign-up page for Armada Residence breakfast guests, live at
 <https://club.armadaresidence.com>. Guests scan a QR code, leave their mobile

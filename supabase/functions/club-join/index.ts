@@ -1,4 +1,4 @@
-// club-join: stores an Armada Club sign-up in public.club_signups.
+// club-join: stores an Armada Residence Club sign-up in public.club_signups.
 // Validates the request, rate-limits by a hashed IP, and upserts by phone.
 // Logs carry error codes only, never personal data.
 import { createClient } from 'npm:@supabase/supabase-js@2.49.4';

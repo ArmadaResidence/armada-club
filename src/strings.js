@@ -4,12 +4,16 @@
 // Bump when the consent wording changes, and record the new text in CONSENT.md.
 export const CONSENT_VERSION = '2026-11-03';
 
+// Keeps the club name on one line in headings (no-break spaces at render time only).
+const CLUB_NAME = /نادي أرمادا ريزيدنس|Armada Residence Club/g;
+export const keepClubName = (s) => s.replace(CLUB_NAME, (m) => m.replace(/ /g, ' '));
+
 export const T = {
   ar: {
-    docTitle: 'نادي أرمادا | أرمادا ريزيدنس',
+    docTitle: 'نادي أرمادا ريزيدنس',
     logoAlt: 'أرمادا ريزيدنس',
     langToggle: 'English',
-    title: 'نادي أرمادا',
+    title: 'نادي أرمادا ريزيدنس',
     subtitle: 'سجّل مجانًا لتصلك عروض خاصة بالأعضاء في أرمادا ريزيدنس بالطائف.',
     b1: 'عروض وأكواد خصم للأعضاء فقط',
     b2: 'أول من يعرف بالعروض الموسمية',
@@ -19,7 +23,7 @@ export const T = {
     nameLabel: 'الاسم (اختياري)',
     consent: 'أوافق على تلقي العروض من أرمادا ريزيدنس عبر الواتساب والبريد الإلكتروني، وعلى عرض إعلاناتها لي على منصات مثل سناب شات وتيك توك وميتا وجوجل، ويمكنني إلغاء ذلك في أي وقت.',
     submit: 'انضم إلى النادي',
-    doneTitle: 'تم تسجيلك في نادي أرمادا.',
+    doneTitle: 'تم تسجيلك في نادي أرمادا ريزيدنس.',
     doneText: 'ستصلك عروض الأعضاء عبر الواتساب والبريد الإلكتروني.',
     follow: 'تابعنا على حساباتنا',
     errPhone: 'اكتب رقم جوال صحيحًا.',
@@ -29,10 +33,10 @@ export const T = {
     privacyText: 'نستخدم رقم جوالك واسمك لإرسال عروض أرمادا ريزيدنس إليك عبر الواتساب، ونرفع رقم جوالك بصيغة مشفّرة إلى منصات الإعلان، مثل سناب شات وتيك توك وميتا وجوجل، لعرض إعلاناتنا لك، وقد تعالج هذه المنصات البيانات خارج المملكة. يمكنك إلغاء اشتراكك في أي وقت بالرد على أي رسالة منا. نحذف بيانات الأعضاء بعد 24 شهرًا من آخر نشاط.',
   },
   en: {
-    docTitle: 'Armada Club | Armada Residence',
+    docTitle: 'Armada Residence Club',
     logoAlt: 'Armada Residence',
     langToggle: 'العربية',
-    title: 'Armada Club',
+    title: 'Armada Residence Club',
     subtitle: 'Join free to receive member-only offers at Armada Residence in Taif.',
     b1: 'Member-only offers and promo codes',
     b2: 'Be the first to hear about seasonal offers',
@@ -42,7 +46,7 @@ export const T = {
     nameLabel: 'Name (optional)',
     consent: 'I agree to receive Armada Residence offers by WhatsApp and email, and to be shown its ads on platforms such as Snapchat, TikTok, Meta and Google. I can opt out at any time.',
     submit: 'Join the club',
-    doneTitle: "You've joined Armada Club.",
+    doneTitle: "You've joined Armada Residence Club.",
     doneText: 'Member offers will reach you by WhatsApp and email.',
     follow: 'Follow us',
     errPhone: 'Enter a valid mobile number.',
